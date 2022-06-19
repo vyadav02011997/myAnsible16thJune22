@@ -6,3 +6,10 @@
     apt:
       name: apache2
       state: present
+    when: ansible_os_family =="Debian"
+
+  - name: I want to start webserver
+    apt:
+      name: apache2
+      state: start
+    when: ansible_os_family =="Debian"
