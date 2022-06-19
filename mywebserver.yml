@@ -11,5 +11,5 @@
   - name: I want to start webserver
     apt:
       name: apache2
-      state: start
+      state: started
     when: ansible_os_family =="Debian"
