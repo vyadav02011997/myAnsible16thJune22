@@ -10,7 +10,7 @@
 172.31.37.16
 172.31.33.11
 
-[myappservers:vars]
+[mywebservers:vars]
 myvariable= value
 mywebpackageonubuntu= apache2
 mywebpackageonredhat= httpd
