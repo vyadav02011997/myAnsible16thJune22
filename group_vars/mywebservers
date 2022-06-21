@@ -1,5 +1,5 @@
 ---
 
-myvariable= value
-mywebpackageonubuntu= apache2
-mywebpackageonredhat= httpd
+myvariable: value
+mywebpackageonubuntu: apache2
+mywebpackageonredhat: httpd
