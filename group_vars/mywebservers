@@ -4,3 +4,4 @@ myvariable: value
 mywebpackageonubuntu: apache2
 mywebpackageonredhat: httpd
 myjavapackageonubuntu: openjdk-8-jre
+myjavapackageonredhat: java-1.8.0-openjdk
