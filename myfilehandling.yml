@@ -15,6 +15,6 @@
       state: present
 
   - name: copy dynamic file into node side
-    tamplate:
+    template:
       src: myindexfile.j2
       dest: /var/www/html/index.html
