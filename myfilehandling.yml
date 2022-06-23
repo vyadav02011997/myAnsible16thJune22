@@ -18,9 +18,16 @@
     template:
       src: myindexfile.j2
       dest: /var/www/html/index.html
+    notify: restartwebserver
 
   - name: download remote file
     get_url:
       url: https://images.pexels.com/photos/60597/dahlia-red-blossom-bloom-60597.jpeg?cs=srgb&dl=pexels-pixabay-60597.jpg&fm=jpg
       dest: /home/ubuntu/pexels-pixabay-60597.jpg
       force_basic_auth: yes
+  
+  handlers:
+  - name: restartwebserver
+    service:
+      name: apache2
+      state: restarted
