@@ -8,3 +8,9 @@
     copy:
       src: mystatic
       dest: /home/ubuntu/mystaticfile
+
+  - name: I want to intall webserver
+    apt:
+      name: apache2
+      state: present
+      
