@@ -4,4 +4,6 @@
     update_cache: yes
 
 - name: install openjdk-8-jdk
-  state: present    
+  apt:
+    name: openjdk-8-jdk
+    state: present    
