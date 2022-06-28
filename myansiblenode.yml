@@ -1,0 +1,17 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: I weant to create ansible nodes
+    ec2:
+    key_name: RSA-Mumbai
+    instance_type: t2.micro
+    image: ami-0ca30a0591703940a
+    wait: yes
+    group: SG
+    count: 2
+    vpc_subnet_id: subnet-01fed7b966e78041f
+    assign_public_ip: yes
+    region: ap-south-1a
+    instance_tags:
+        Name: ansible_node
